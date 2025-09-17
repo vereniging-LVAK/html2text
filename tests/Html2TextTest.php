@@ -27,9 +27,9 @@ class Html2TextTest extends \PHPUnit\Framework\TestCase {
 		$this->assertTrue(file_exists($html), "File '{$html}' does not exist");
 		$this->assertTrue(file_exists($txt), "File '{$txt}' does not exist");
 		$input = file_get_contents($html);
-		$expected = \Soundasleep\Html2Text::fixNewlines(file_get_contents($txt));
+		$expected = \vereniging-LVAK\Html2Text::fixNewlines(file_get_contents($txt));
 
-		$output = \Soundasleep\Html2Text::convert($input, $options);
+		$output = \vereniging-LVAK\Html2Text::convert($input, $options);
 
 		if ($output != $expected) {
 			file_put_contents(__DIR__ . "/failures/$result.output", $output);

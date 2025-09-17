@@ -1,6 +1,6 @@
 <?php
 
-namespace Soundasleep;
+namespace vereniging-LVAK;
 
 class Html2TextException extends \Exception {
 
