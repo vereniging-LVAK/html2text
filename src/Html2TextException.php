@@ -1,6 +1,6 @@
 <?php
 
-namespace vereniging-LVAK;
+namespace VerenigingLVAK;
 
 class Html2TextException extends \Exception {
 

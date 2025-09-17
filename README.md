@@ -60,7 +60,7 @@ You can use [Composer](http://getcomposer.org/) to add the [package](https://pac
 And then use it quite simply:
 
 ```php
-$text = \vereniging-LVAK\Html2Text::convert($html);
+$text = \VerenigingLVAK\Html2Text::convert($html);
 ```
 
 You can also include the supplied `html2text.php` and use `$text = convert_html_to_text($html);` instead.
@@ -80,7 +80,7 @@ $options = array(
   'ignore_errors' => true,
   // other options go here
 );
-$text = \vereniging-LVAK\Html2Text::convert($html, $options);
+$text = \VerenigingLVAK\Html2Text::convert($html, $options);
 ```
 
 ## Tests
