@@ -1,5 +1,5 @@
 {
-  "name": "vereniging-LVAK/html2text",
+  "name": "vereniging-lvak/html2text",
   "description": "A PHP script to convert HTML into a plain text format",
   "type": "library",
   "keywords": [ "php", "html", "text", "email" ],
