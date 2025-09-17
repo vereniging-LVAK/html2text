@@ -1,10 +1,10 @@
 One:
 
-Two: two]
+Two: [two]
 
-Three: three]
+Three: [three]
 
-Four: four]
+Four: [four]
 
 With links
 
