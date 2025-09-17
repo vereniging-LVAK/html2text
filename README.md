@@ -1,6 +1,8 @@
 ![example workflow](https://github.com/soundasleep/html2text/actions/workflows/test.yml/badge.svg) [![Total Downloads](https://poser.pugx.org/soundasleep/html2text/downloads.png)](https://packagist.org/packages/soundasleep/html2text)
 =========
 
+Note: this library has been changed, link format is different as the original library
+
 html2text is a very simple script that uses DOM methods to convert HTML into a format similar to what would be
 rendered by a browser - perfect for places where you need a quick text representation. For example:
 
@@ -40,7 +42,7 @@ Another div
 A div
 within a div
 
-[A link](http://foo.com)
+A link: http://foo.com
 ```
 
 See the [original blog post](http://journals.jevon.org/users/jevon-phd/entry/19818) or the related [StackOverflow answer](http://stackoverflow.com/a/2564472/39531).
@@ -70,7 +72,7 @@ You can also include the supplied `html2text.php` and use `$text = convert_html_
 | Option | Default | Description |
 |--------|---------|-------------|
 | **ignore_errors** | `false` | Set to `true` to ignore any XML parsing errors. |
-| **drop_links** | `false` | Set to `true` to not render links as `[http://foo.com](My Link)`, but rather just `My Link`. |
+| **drop_links** | `false` | Set to `true` to not render links as `http://foo.com: My Link`, but rather just `My Link`. |
 | **char_set** | `'auto'` | Specify a specific character set.  Pass multiple character sets (comma separated) to detect encoding, default is ASCII,UTF-8 |
 
 Pass along options as a second argument to `convert`, for example:
