@@ -476,11 +476,19 @@ class Html2Text {
 						$output = "$output";
 					} else {
 						// replace it
-						if ($output) {
-							if ($options['drop_links']) {
-								$output = "$output";
-							} else {
-								$output = "[$output]($href)";
+						if ($output)
+						{
+							if ( $classes = $node->getAttribute("class") 
+								and strpos( $classes, 'nolink' ) !== false ) $drop_this_link = true;
+							else $drop_this_link = $options[ 'drop_links' ];
+							
+							if ( $drop_this_link )
+							{
+								$output = "$output"; // WTF?
+							}
+							else
+							{
+								$output = "$output: $href";
 							}
 						} else {
 							// empty string
